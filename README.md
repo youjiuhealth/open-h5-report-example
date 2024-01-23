@@ -38,9 +38,13 @@ https://op.youjiuhealth.com/report/detail/21970?appid=861541050186538&timestamp=
 
 
 ###### token生成规则
-
 ~~~
 token = md5( AppID . AppSecret . timestamp . measurementId )
+~~~
+
+###### 组合式token生成规则
+~~~
+combinationToken = "third." + measurementId + "." + AppID + "." + timestamp + "." + token
 ~~~
 
 # 参数及不同产品访问路径
@@ -65,5 +69,8 @@ https://c.youjiuhealth.com/index.html#/pages/report/show/show?id={$measurementId
 
 # U+系列移动端
 https://mini-fit-butler-client.youjiuhealth.com/index.html#/subPack/report/body-resume/body-resume?type=u-plus&id={measurementId}&token={token}&lang={lang}&weight_type={weight_type}&length_type={length_type}
+
+# U+系列PC端
+https://report-u-01.youjiuhealth.com/report-view/report/adult/measure-report?id={measurementId}&token={combinationToken}&lang={lang}&weight_type={weight_type}&length_type={length_type}
 ~~~
 
