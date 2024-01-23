@@ -40,13 +40,13 @@ https://op.youjiuhealth.com/report/detail/21970?appid=861541050186538&timestamp=
 ###### token生成规则
 ~~~
 token = md5( AppID + AppSecret + timestamp + measurementId )
-# + 为字符串拼接符
+# 伪代码，+ 为字符串拼接符
 ~~~
 
 ###### 组合式token生成规则
 ~~~
 combinationToken = "third." + measurementId + "." + AppID + "." + timestamp + "." + token
-# + 为字符串拼接符
+# 伪代码，+ 为字符串拼接符
 # 输出示例
 # third.337964691.861549564186538.1705918536.5e01fc5f09070103c7529b17e94eec26
 ~~~
