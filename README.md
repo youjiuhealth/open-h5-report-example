@@ -69,10 +69,10 @@ combinationToken = "third." + measurementId + "." + AppID + "." + timestamp + ".
 https://op.youjiuhealth.com/report/detail/{measurementId}?appid={appid}&timestamp={timestamp}&token={token}
 
 # xone系列移动端
-https://c.youjiuhealth.com/index.html#/pages/report/show/show?id={$measurementId}&token={$token}&lang={lang}
+https://c.youjiuhealth.com/index.html#/pages/report/show/show?id={$measurementId}&token={$combinationToken}&lang={lang}
 
 # U+系列移动端
-https://mini-fit-butler-client.youjiuhealth.com/index.html#/subPack/report/body-resume/body-resume?type=u-plus&id={measurementId}&token={token}&lang={lang}&weight_type={weight_type}&length_type={length_type}
+https://mini-fit-butler-client.youjiuhealth.com/index.html#/subPack/report/body-resume/body-resume?type=u-plus&id={measurementId}&token={combinationToken}&lang={lang}&weight_type={weight_type}&length_type={length_type}
 
 # U+系列PC端
 https://report-u-01.youjiuhealth.com/report-view/report/adult/measure-report?id={measurementId}&token={combinationToken}&lang={lang}&weight_type={weight_type}&length_type={length_type}
