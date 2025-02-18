@@ -43,7 +43,7 @@ token = md5( AppID + AppSecret + timestamp + measurementId )
 # 伪代码，+ 为字符串拼接符
 ~~~
 
-###### 组合式token生成规则
+###### 组合式token生成规则（避免AppID、timestamp等独立传参）
 ~~~
 combinationToken = "third." + measurementId + "." + AppID + "." + timestamp + "." + token
 # 伪代码，+ 为字符串拼接符
